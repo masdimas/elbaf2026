@@ -1,18 +1,17 @@
 ---
-const base = import.meta.env.BASE_URL;
 import { ChevronDown } from '@lucide/astro';
 ---
 <section id="rundown" class="relative bg-blue-tertiary">
     <div class="flex flex-col md:flex-row w-full max-w-[970px] m-auto items-start">
       <div class="relative px-6 py-10 w-full max-w-[430px] grow">
         <div class="aspect-square w-full max-w-[382px] shrink-0 m-auto rounded-[20px] overflow-hidden border border-black">
-          <img src={`${base}/images/venue.png`} alt="venue" class="w-full h-full">
+          <img src="/images/venue.png" alt="venue" class="w-full h-full">
         </div>
         <div class="flex flex-col justify-center items-center mt-[-160px] max-xs-max:mt-[-116px]">
           <span class="font-dx-monstral text-[32px] leading-[30px] text-white rounded-t-xl p-4 bg-red-primary max-w-[258px] border-4 border-brown-primary border-b-0">OCT 29 - NOV 1, 2026</span>
           <div class="flex flex-col gap-3 w-full max-w-[330px] rounded-xl p-4 bg-white border-4 border-brown-primary shadow-box-mechanism">
             <div class="flex items-center gap-3">
-              <img src={`${base}/images/location.svg`} alt="location-icon">
+              <img src="/images/location.svg" alt="location-icon">
               <div class="flex flex-col shrink-0 max-xs-max:shrink">
                 <span class="font-dx-monstral text-black text-xl w-full leading-[20px]">Center Court 1 Atrium,</span>
                 <span class="font-dx-monstral text-black text-[32px] w-full leading-[30px]">Puri Indah Mall</span>

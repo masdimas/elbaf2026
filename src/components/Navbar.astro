@@ -1,12 +1,11 @@
 ---
-const base = import.meta.env.BASE_URL;
 import { Menu, X } from '@lucide/astro';
 ---
 <header x-data="{ isOpen: false }" class="fixed top-5 w-full max-w-[920px] mx-auto left-0 right-0 z-10 px-4">
     <div class="flex flex-col lg:flex-row justify-between items-center mx-auto p-5 border border-gray-300 rounded-4xl bg-white-transparent backdrop-blur-xl">
       <div class="w-full lg:w-auto flex justify-between items-center">
-        <a href={`${base}/`} class="flex justify-center items-center gap-2">
-          <img src={`${base}/images/logo-elbaf-footer.webp`} alt="logo-ellenka" class="w-[52px]">
+        <a href="/" class="flex justify-center items-center gap-2">
+          <img src="/images/logo-elbaf-footer.webp" alt="logo-ellenka" class="w-[52px]">
         </a>
 
         <!-- Toggle Button Mobile -->
@@ -21,7 +20,7 @@ import { Menu, X } from '@lucide/astro';
 
       <!-- Menu Desktop -->
       <div class="hidden lg:flex gap-2.5 justify-end items-center">
-        <a href={`${base}/#about`} class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all">About Event</a>
+        <a href="/#about" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all">About Event</a>
         
         <!-- Dropdown Champion Desktop -->
         <div 
@@ -48,9 +47,9 @@ import { Menu, X } from '@lucide/astro';
             x-transition:leave-end="opacity-0 scale-95 -translate-y-2"
             class="flex flex-col gap-2.5 absolute top-[60px] z-50"
           >
-            <a href={`${base}/baristas/local-champion`} class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Local Champion</a>
-            <a href={`${base}/baristas/semifinalists`} class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Top 18 Semifinalist</a>
-            <a href={`${base}/baristas/grandfinalists`} class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Grand Finalist</a>
+            <a href="/baristas/local-champion" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Local Champion</a>
+            <a href="/baristas/semifinalists" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Top 18 Semifinalist</a>
+            <a href="/baristas/grandfinalists" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Grand Finalist</a>
           </div>
         </div>
 
@@ -79,12 +78,12 @@ import { Menu, X } from '@lucide/astro';
             x-transition:leave-end="opacity-0 scale-95 -translate-y-2"
             class="flex flex-col gap-2.5 absolute top-[60px] z-50"
           >
-            <a href={`${base}/rules/rules-regional`} class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Regional Jakarta</a>
-            <a href={`${base}/rules/rules-nasional`} class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Nasional</a>
+            <a href="/rules/rules-regional" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Regional Jakarta</a>
+            <a href="/rules/rules-nasional" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-start rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all whitespace-nowrap w-fit">Nasional</a>
           </div>
         </div>
 
-        <a href={`${base}/newsupdate`} class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all">News Update</a>
+        <a href="/newsupdate" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all">News Update</a>
       </div>
 
       <!-- Menu Mobile -->
@@ -104,7 +103,7 @@ import { Menu, X } from '@lucide/astro';
         <!-- About Event -->
         <a 
           @click="isOpen = false" 
-          href={`${base}/#about`} 
+          href="/#about" 
           class="w-full font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all"
         >
           About Event
@@ -127,21 +126,21 @@ import { Menu, X } from '@lucide/astro';
           >
             <a 
               @click="isOpen = false" 
-              href={`${base}/baristas/local-champion`} 
+              href="/baristas/local-champion" 
               class="w-full font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all"
             >
               Local Champion
             </a>
             <a 
               @click="isOpen = false" 
-              href={`${base}/baristas/semifinalists`} 
+              href="/baristas/semifinalists" 
               class="w-full font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all"
             >
               Top 18 Semifinalist
             </a>
             <a 
               @click="isOpen = false" 
-              href={`${base}/baristas/grandfinalists`} 
+              href="/baristas/grandfinalists" 
               class="w-full font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all"
             >
               Grand Finalist
@@ -166,14 +165,14 @@ import { Menu, X } from '@lucide/astro';
           >
             <a 
               @click="isOpen = false" 
-              href={`${base}/rules/rules-regional`} 
+              href="/rules/rules-regional" 
               class="w-full font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all"
             >
               Regional Jakarta
             </a>
             <a 
               @click="isOpen = false" 
-              href={`${base}/rules/rules-nasional`} 
+              href="/rules/rules-nasional" 
               class="w-full font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all"
             >
               Nasional
@@ -184,7 +183,7 @@ import { Menu, X } from '@lucide/astro';
         <!-- News Update -->
         <a 
           @click="isOpen = false" 
-          href={`${base}/newsupdate`} 
+          href="/newsupdate" 
           class="w-full font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all"
         >
           News Update
