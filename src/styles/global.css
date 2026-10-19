@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "DIN Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/fonts/DIN-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Dx Monstal";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/fonts/DxMonstral-Blur.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Qalited Rough Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/fonts/QalitedRough-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Qalited Rough Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/fonts/QalitedRough-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oxanium Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/fonts/Oxanium-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oxanium Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/fonts/Oxanium-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@theme{
+    --font-dx-monstral: "Dx Monstal", var(--font-sans);
+    --font-din-medium: "DIN Medium", var(--font-sans);
+    --font-qalited-rough-regular: "Qalited Rough Regular", var(--font-sans);
+    --font-qalited-rough-italic: "Qalited Rough Italic", var(--font-sans);
+    --font-oxanium-regular: "Oxanium Regular", var(--font-sans);
+    --font-oxanium-bold: "Oxanium Bold", var(--font-sans);
+    --font-montserrat-regular: "Montserrat Regular", var(--font-sans);
+
+    --color-yellow-primary: rgba(246, 194, 23, 1);
+    --color-yellow-secondary: #E7D3B8;
+    --color-yellow-tertiary: #F8DC97;
+    --color-blue-primary: rgba(19, 135, 192, 1);
+    --color-blue-secondary: rgba(68, 208, 236, 1);
+    --color-blue-tertiary: #44D0EC;
+    --color-red-primary: rgba(241, 86, 102, 1);
+    --color-brown-primary: rgba(70, 49, 30, 1);
+    --color-white-transparent: rgba(255, 255, 255, 0.3);
+    --color-brown-secondary: #E7D3B8;
+    --color-green-primary: #16895B;
+    --color-green-secondary: #038D80;
+    --color-green-tertiary: #00534C;
+    --color-font-secondary: #5F6368;
+    --color-black-secondary: #25272B;
+    --color-gray-secondary: #5F6368;
+    --color-gray-tertiary: #BDC1C6;
+    --color-gold-primary: #917519;
+    --color-gold-secondary: #CC9C00;
+    --color-silver-primary: #707070;
+    --color-silver-secondary: #A1A1A1;
+    --color-bronze-primary: #713600;
+    --color-bronze-secondary: #A14C00;
+
+    --text-shadow-outside-pink: 3.5px 3.5px 0 #F15666, -3.5px 3.5px 0 #F15666, 3.5px -3.5px 0 #F15666, -3.5px -3.5px 0 #F15666;
+    --text-shadow-brown: 2px 1px 0 var(--color-brown-primary);
+    --text-shadow-green: 0px 4px 0 var(--color-green-tertiary);
+
+    --shadow-box-mechanism: 0px 5px 0px var(--color-brown-primary);
+    --shadow-judge-image: 5px 6px 0px var(--color-green-secondary);
+
+    --drop-shadow-box-silver: 0 5px 0 var(--color-silver-secondary);
+    --drop-shadow-box-gold: 0 5px 0 var(--color-gold-secondary);
+    --drop-shadow-box-bronze: 0 5px 0 var(--color-bronze-secondary);
+
+    --background-image-gradient-primary: linear-gradient(to bottom, #038D80 0%, #FFFFFF 100%);
+    --background-image-gradient-secondary: linear-gradient(to bottom, #038D80 0%, #FFFFFF 35%);
+
+    --breakpoint-xs: 320px;
+    --breakpoint-xs-max: 380px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.text-stroke-red {
+    -webkit-text-stroke: 14px #F15666;
+    paint-order: stroke fill;
+    color: white;
+
+    /* KUNCI: Wajib pakai prefix -webkit- dan stroke-miterlimit */
+    -webkit-stroke-linejoin: round;
+    stroke-linejoin: round;
+    -webkit-stroke-miterlimit: 2;
+    stroke-miterlimit: 2;
+}
+
+.text-stroke-brown {
+  -webkit-text-stroke: 3px var(--color-brown-primary);
+  -webkit-stroke-linejoin: round;
+  stroke-linejoin: round;
+  paint-order: stroke fill;           
+}
+
+.text-stroke-yellow {
+  -webkit-text-stroke: 14px var(--color-yellow-primary);
+  paint-order: stroke fill;           
+}
+
+.text-stroke-yellow-secondary {
+  -webkit-text-stroke: 14px #FFE89B;
+  paint-order: stroke fill;           
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 14px #FFF6E1;
+  paint-order: stroke fill;           
+}
+
+@utility text-stroke-green-nav {
+  --shadow-color: #00534C;
+  -webkit-text-stroke: 14px #199C6B;
+  paint-order: stroke fill;   
+  filter: drop-shadow(0px 4px 0px var(--shadow-color));
+}
+
+@utility text-stroke-red-nav {
+  --shadow-color: #B00012;
+  -webkit-text-stroke: 14px var(--color-red-primary);
+  paint-order: stroke fill;   
+  filter: drop-shadow(0px 4px 0px var(--shadow-color));
+} 
+
+
+@utility no-scrollbar {
+  /* Chrome, Safari, dan Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE dan Edge */
+  -ms-overflow-style: none;
+}
+
+
+#about .swiper-pagination{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 14px;
+}
+
+#about .swiper-pagination-bullet{
+  background: #ffffff;
+}
+
+section{
+  scroll-margin-top: 70px;
+}
+
+.swiper-slide .instagram-media,
+.swiper-slide iframe {
+  pointer-events: auto !important;
+  touch-action: auto !important;
+}
+
+#judges ul{
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+#judges p, #judges li{
+  font-family: var(--font-qalited-rough-regular);
+  color: var(--color-black);
+  font-size: var(--text-sm);
+}
+
+#rules ol{
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+#rules ul{
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+#rules li, #rules p{
+  font-family: var(--font-oxanium-regular);
+  color: var(--color-black);
+  font-size: var(--text-base);
+}
+
+#rules b{
+  font-family: var(--font-oxanium-bold);
+  color: var(--color-black);
+  font-size: var(--text-base);
+}
+
+#rules blockquote{
+  padding: 12px;
+  background-color: var(--color-yellow-tertiary);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

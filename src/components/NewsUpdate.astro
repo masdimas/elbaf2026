@@ -1,0 +1,47 @@
+---
+const base = import.meta.env.BASE_URL;
+import { ArrowRight } from '@lucide/astro';
+---
+<section id="news" class="bg-white relative py-10 px-4">
+    <div class="flex flex-col w-full max-w-[970px] gap-9 m-auto">
+      <div class="flex max-xs-max:flex-col max-xs-max:items-start gap-4 justify-between items-end md:items-center w-full max-w-[970px] m-auto px-4" data-aos="fade-up">
+        <span class="font-dx-monstral text-blue-primary text-[40px] tracking-[0.5px] uppercase text-stroke-yellow leading-10">News Update</span>
+        <a href="news-update.html" class="flex items-center gap-2 text-gray-800 px-5 py-2 border border-slate-400 rounded-full h-fit  shrink-0 hover:bg-slate-100 transition-colors">
+          <span class="font-qalited-rough-regular text-sm">View All</span>
+          <ArrowRight class="w-[16px] h-[16px]" />
+        </a>
+      </div>
+      <div class="flex flex-col md:flex-row justify-center items-start gap-4 border-0 md:border-b md:border-b-gray-tertiary" data-aos="fade-in">
+        <a href="#" target="_blank" class="group flex flex-col max-w-[477px] gap-6 pb-10 border-b border-b-gray-tertiary md:border-b-0">
+          <div class="aspect-video relative rounded-2xl overflow-hidden shadow-box-mechanism w-full border-4 border-brown-primary">
+            <img src={`${base}/images/thumbnail-headline.webp`} alt="thumbnail-headline" class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="font-oxanium-bold line-clamp-3 text-black-secondary text-xl md:text-[28px] leading-7 md:leading-9 transition-transform duration-300 ease-in-out group-hover:text-blue-primary">Siapkan Generasi Baru, Ellenka Professional Gandeng Delifru Jalankan Ellenka Barista Festival</span>
+            <span class="font-oxanium-regular line-clamp-3 text-gray-secondary text-base leading-[26px]">Di balik sebuah kompetisi, akan selalu ada banyak cerita dan kolaborasi yang membuatnya berjalan. Ellenka Barista Festival 2026 adalah salah satu contohnya.</span>
+          </div>
+        </a>
+        <div class="flex flex-col pl-0 md:pl-8 grow">
+          <a href="#" target="_blank" class="group flex py-4 md:py-6 min-h-[137px] gap-6 border-b border-b-gray-tertiary">
+            <span class="w-full font-oxanium-bold text-black-secondary text-xl line-clamp-4 transition-transform duration-300 ease-in-out group-hover:text-blue-primary">Perkuat Ekosistem Kopi, Ellenka Professional Hadirkan EBS Coconut Milk di ELBAF 2025</span>
+            <div class="aspect-3/2 relative rounded-2xl overflow-hidden shadow-box-mechanism w-full border-4 border-brown-primary max-w-[148px] md:max-w-[168.56px] max-h-[111px] shrink-0">
+              <img src={`${base}/images/thumbnail-headline.webp`} alt="thumbnail-headline" class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+            </div>
+          </a>
+          <a href="#" target="_blank" class="group flex py-4 md:py-6 min-h-[137px] gap-6 border-b border-b-gray-tertiary">
+            <span class="w-full font-oxanium-bold text-black-secondary text-xl line-clamp-4 transition-transform duration-300 ease-in-out group-hover:text-blue-primary">Judul Pendek</span>
+            <div class="aspect-3/2 relative rounded-2xl overflow-hidden shadow-box-mechanism w-full border-4 border-brown-primary max-w-[148px] md:max-w-[168.56px] max-h-[111px] shrink-0">
+              <img src={`${base}/images/thumbnail-headline.webp`} alt="thumbnail-headline" class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+            </div>
+          </a>
+          <a href="#" target="_blank" class="group flex py-4 md:py-6 min-h-[137px] gap-6 border-b border-b-gray-tertiary md:border-b-0">
+            <span class="w-full font-oxanium-bold text-black-secondary text-xl line-clamp-4 transition-transform duration-300 ease-in-out group-hover:text-blue-primary">Thumbnail Ngaco</span>
+            <div class="aspect-3/2 relative rounded-2xl overflow-hidden shadow-box-mechanism w-full border-4 border-brown-primary max-w-[148px] md:max-w-[168.56px] max-h-[111px] shrink-0">
+              <img src={`${base}/images/thumbnail-headline.webp`} alt="thumbnail-headline" class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>

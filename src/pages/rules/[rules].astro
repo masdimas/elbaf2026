@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import RulesRegional from '../../components/RulesRegional.astro';
+import RulesNasional from '../../components/RulesNasional.astro';
+import Sponsor from '../../components/Sponsor.astro';
+import Footer from '../../components/Footer.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { rules: 'rules-nasional' } },
+    { params: { rules: 'rules-regional' } },
+  ];
+}
+
+const { rules } = Astro.params;
+---
+
+<Layout>
+	<Navbar />
+	{rules === 'rules-nasional' && <RulesNasional />}
+	{rules === 'rules-regional' && <RulesRegional />}
+	<Sponsor />
+	<Footer />
+</Layout>

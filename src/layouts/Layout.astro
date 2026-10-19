@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+import 'aos/dist/aos.css';
+const base = import.meta.env.BASE_URL;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- SEO -->
+		<meta name="title" content="Ellenka Barista Festival 2026 - detikcom">
+		<meta name="description" content="Tunjukkan skill, kreativitas, dan passion-mu di Ellenka Barista Festival bersama detikcom. Uji kemampuan racik menu, teknik penyajian, dan pemahaman produk untuk menjadi juara barista nasional!">
+		<meta name="keywords" content="Ellenka Barista Festival, detikcom, kompetisi barista, latte art, manual brew, barista indonesia, lomba racik kopi, kreasi minuman">
+		<meta name="author" content="detikcom">
+		<meta name="robots" content="index, follow">
+
+		<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.detik.com/ellenkabaristafestival">
+		<meta property="og:title" content="Ellenka Barista Festival 2026 - detikcom">
+		<meta property="og:description" content="Ajang pembuktian kreativitas dan skill barista terbaik se-Indonesia. Daftarkan dirimu dan raih gelar juara nasional!">
+		<meta property="og:image" content="https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/images/hero-desktop.webp">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:locale" content="id_ID">
+		<meta property="og:site_name" content="detikcom">
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://www.detik.com/ellenkabaristafestival">
+		<meta name="twitter:title" content="Ellenka Barista Festival 2026 - detikcom">
+		<meta name="twitter:description" content="Ajang pembuktian kreativitas dan skill barista terbaik se-Indonesia. Daftarkan dirimu dan raih gelar juara nasional!">
+		<meta name="twitter:image" content="https://cdnstatic.detik.com/live/_assets/adsdev/elbaf/images/hero-desktop.webp">
+
+		<link rel="icon" type="image/png" href={`${base}/images/favicon/favicon-96x96.webp`} sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href={`${base}/images/favicon/favicon.svg`} />
+		<link rel="shortcut icon" href={`${base}/images/favicon/favicon.ico`} />
+		<link rel="apple-touch-icon" sizes="180x180" href={`${base}/images/favicon/apple-touch-icon.webp`} />
+		
+		<title>Ellenka Barista Festival 2026</title>
+	</head>
+	<body>
+		<slot />
+		<script>
+			import AOS from 'aos';
+			AOS.init({
+				delay: 200,
+            });
+		</script>
+	</body>
+</html>

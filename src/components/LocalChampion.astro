@@ -1,0 +1,84 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<section id="local-champion" class="bg-gradient-secondary px-4">
+    <div class="fixed top-0 left-0 right-0 z-[0] mix-blend-color-dodge" data-aos="fade-in">
+      <img src={`${base}/images/header-aksen.webp`} alt="header-aksen" class="w-full hidden md:block">
+      <img src={`${base}/images/header-aksen-mobile.webp`} alt="header-aksen" class="w-full block md:hidden">
+    </div>
+    <div class="flex flex-col gap-10 relative w-full max-w-[1080px] pt-[140px] pb-0 m-auto">
+      <div class="flex justify-center w-full m-auto px-4" data-aos="fade-up">
+        <span class="font-dx-monstral text-red-primary text-[40px] tracking-[0.5px] uppercase text-stroke-yellow-secondary text-center max-w-[344px] leading-10">Shortlisted Baristas</span>
+      </div>
+      <div class="flex justify-center items-center gap-5 flex-wrap max-w-[1032px] m-auto">
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-green-nav inline-block rotate-[-3deg]">
+          All Baristas
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Bali
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Balikpapan
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Bandung
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Jakarta
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Makassar
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Medan
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Surabaya
+        </a>
+        <a href="#" class="font-dx-monstral text-base text-white leading-10 uppercase text-stroke-red-nav hover:text-stroke-green-nav inline-block hover:rotate-[-3deg]">
+          Yogyakarta
+        </a>
+      </div>
+      <div x-data="{
+    names: ['Aditya Lilamanjaya Aditya Lilamanjaya', 'Muhammad Dimas', 'Septiandi Putra'],
+    cities: ['Bali', 'Jakarta', 'Bandung', 'Surabaya', 'Yogyakarta', 'Medan', 'Makassar', 'Semarang', 'Malang', 'Palembang'],
+    getRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+  }" class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-8 w-full max-w-[772px] m-auto">
+        <template x-for="i in 20" :key="i">
+          <div class="flex rounded-xl w-full border-4 border-brown-primary shadow-box-mechanism shrink-0 overflow-hidden">
+
+            <div class="flex flex-col justify-center relative bg-blue-primary w-full">
+              <div class="w-full relative pt-2.5 flex justify-center items-end">
+                <img src={`${base}/images/stars-icon.webp`} alt="stars-icon" class="w-[27px] absolute top-0 left-0 z-[2]">
+                <div class="rounded-tr-md aspect-square w-[154px] h-[154px] max-xs-max:w-full max-xs-max:h-full border-2 border-b-0 border-brown-primary overflow-hidden relative">
+                  <img src={`${base}/images/dummy-photo-barista.webp`} alt="foto-barista" class="w-full h-full object-cover">
+                </div>
+              </div>
+
+              <div class="flex flex-col bg-red-primary grow py-3 gap-2 border-t-2 border-brown-primary">
+                <span x-text="getRandom(names)" class="uppercase font-dx-monstral text-2xl max-xs-max:text-base text-yellow-primary text-stroke-brown text-shadow-brown leading-tight line-clamp-2 w-full px-3 grow"></span>
+                <span x-text="getRandom(cities)" class="uppercase font-qalited-rough-regular text-white text-sm line-clamp-1 px-3"></span>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2.5 items-start justify-start bg-[#FFEDDB] p-3 w-full">
+              <span class="uppercase font-qalited-rough-regular text-white text-sm leading-3.5 px-1 py-0.5 bg-[#199C6B] w-full px-3 py-1.5">Truntum Gasblock Borobudur</span>
+              <div class="flex items-start gap-2.5">
+                <img src={`${base}/images/beverage.png`} alt="beverage" class="w-[20px]">
+                <span class="font-qalited-rough-regular text-xl md:text-2xl text-brown-primary leading-[26px] line-clamp-3">Pandan Cloth (C)</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <img src={`${base}/images/food.png`} alt="food" class="w-[20px]">
+                <span class="font-qalited-rough-regular text-xl md:text-2xl text-brown-primary leading-[26px] line-clamp-5">Menu Pendek</span>
+              </div>
+            </div>
+
+          </div>
+
+        </template>
+      </div>
+
+    </div>
+  </section>

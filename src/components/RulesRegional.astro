@@ -1,0 +1,120 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<section id="rules" class="bg-gradient-secondary px-4">
+    <div class="fixed top-0 left-0 right-0 z-[0] mix-blend-color-dodge" data-aos="fade-in">
+      <img src={`${base}/images/header-aksen.webp`} alt="header-aksen" class="w-full hidden md:block">
+      <img src={`${base}/images/header-aksen-mobile.webp`} alt="header-aksen" class="w-full block md:hidden">
+    </div>
+    <div class="flex flex-col gap-10 relative w-full max-w-[1080px] pt-[140px] pb-0 m-auto">
+      <div class="flex justify-center w-full m-auto px-4" data-aos="fade-up">
+        <span class="font-dx-monstral text-white-primary text-[40px] tracking-[0.5px] uppercase text-stroke-red text-center leading-10">Rules &amp; Regulation</span>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 pb-8 w-full max-w-[922px] m-auto">
+        <div x-data="{ open: 0 }" class="flex flex-col gap-4">
+
+          <div class="flex flex-col rounded-2xl border-4 border-brown-primary shadow-box-mechanism overflow-hidden">
+
+            <!-- Accordion Header -->
+            <button @click="open = open === 0 ? null : 0" type="button" class="flex gap-4 items-start p-3 border-b border-brown-primary text-left w-full hover:bg-yellow-primary transition-all cursor-pointer" :class="{ 'bg-yellow-primary': open === 0, 'bg-white': open !== 0 }">
+              <div class="flex gap-3 w-full items-start md:items-center">
+                <span class="uppercase font-oxanium-regular text-white text-2xl tracking-[0.5px] px-1 py-0.5 bg-green-secondary w-fit">
+                  A
+                </span>
+                <span class="uppercase font-dx-monstral text-black text-2xl tracking-[0.5px]">
+                  sistem penilaian & kriteria juri
+                </span>
+              </div>
+              <i data-lucide="chevron-down" class="w-4 h-4 text-gray-800 transition-transform duration-300" :class="{ 'rotate-180': open === 0 }"></i>
+            </button>
+
+
+            <!-- Accordion Content -->
+            <div x-show="open === 0" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2">
+              <div class="flex flex-col px-3 py-4 bg-white w-full gap-3">
+                <ol>
+                  <li>[Quarter Final] 100% penilaian dari panel juri.</li>
+                  <li>[Semi Final] 60% dari penilaian juri + 40% dari hasil voting publik.</li>
+                  <li>[Grand Final] 100% penilaian dari panel juri (voting publik sudah tidak aktif).</li>
+                </ol>
+                <p><b>Kriteria Penilaian Juri (Total 100 poin):</b></p>
+                <blockquote>
+                  <p><b>Teknik & Presisi (30 poin)</b></p>
+                  <p>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/></p>
+                  <p>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/></p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Profil Rasa / Taste (25 poin)</b></p>
+                  <p>Keseimbangan rasa, aroma, aftertaste, dan kompleksitas.</p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Kreativitas & Inovasi (20 poin)</b></p>
+                  <p>Orisinalitas konsep minuman, penggunaan bahan unik, dan storytelling.</p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Presentasi & Komunikasi (15 poin)</b></p>
+                  <p>Penyampaian kepada juri, kepercayaan diri, kebersihan station, dan plating.</p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Keberlanjutan / Sustainability (10 poin)</b></p>
+                  <p>Penggunaan bahan lokal, praktik zero-waste, dan kesadaran terhadap asal-usul kopi.</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-2xl border-4 border-brown-primary shadow-box-mechanism overflow-hidden">
+
+            <!-- Accordion Header -->
+            <button @click="open = open === 1 ? null : 1" type="button" class="flex gap-4 items-start p-3 border-b border-brown-primary text-left w-full hover:bg-yellow-primary transition-all cursor-pointer" :class="{ 'bg-yellow-primary': open === 1, 'bg-white': open !== 1 }">
+              <div class="flex gap-3 w-full items-start md:items-center">
+                <span class="uppercase font-oxanium-regular text-white text-2xl tracking-[0.5px] px-1 py-0.5 bg-green-secondary w-fit">
+                  B
+                </span>
+                <span class="uppercase font-dx-monstral text-black text-2xl tracking-[0.5px]">
+                  format kompetisi
+                </span>
+              </div>
+              <i data-lucide="chevron-down" class="w-4 h-4 text-gray-800 transition-transform duration-300" :class="{ 'rotate-180': open === 1 }"></i>
+            </button>
+
+
+            <!-- Accordion Content -->
+            <div x-show="open === 1" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2">
+              <div class="flex flex-col px-3 py-4 bg-white w-full gap-3">
+                <ol>
+                  <li>[Quarter Final] 100% penilaian dari panel juri.</li>
+                  <li>[Semi Final] 60% dari penilaian juri + 40% dari hasil voting publik.</li>
+                  <li>[Grand Final] 100% penilaian dari panel juri (voting publik sudah tidak aktif).</li>
+                </ol>
+                <p><b>Kriteria Penilaian Juri (Total 100 poin):</b></p>
+                <blockquote>
+                  <p><b>Teknik & Presisi (30 poin)</b></p>
+                  <p>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/></p>
+                  <p>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/>Ekstraksi espresso, konsistensi, kontrol suhu dan tekanan.<br/></p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Profil Rasa / Taste (25 poin)</b></p>
+                  <p>Keseimbangan rasa, aroma, aftertaste, dan kompleksitas.</p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Kreativitas & Inovasi (20 poin)</b></p>
+                  <p>Orisinalitas konsep minuman, penggunaan bahan unik, dan storytelling.</p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Presentasi & Komunikasi (15 poin)</b></p>
+                  <p>Penyampaian kepada juri, kepercayaan diri, kebersihan station, dan plating.</p>
+                </blockquote>
+                <blockquote>
+                  <p><b>Keberlanjutan / Sustainability (10 poin)</b></p>
+                  <p>Penggunaan bahan lokal, praktik zero-waste, dan kesadaran terhadap asal-usul kopi.</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

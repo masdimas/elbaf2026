@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import LocalChampion from '../../components/LocalChampion.astro';
+import Semifinalists from '../../components/Semifinalists.astro';
+import Grandfinalists from '../../components/Grandfinalists.astro';
+import Sponsor from '../../components/Sponsor.astro';
+import Footer from '../../components/Footer.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { stage: 'local-champion' } },
+    { params: { stage: 'semifinalists' } },
+    { params: { stage: 'grandfinalists' } },
+  ];
+}
+
+const { stage } = Astro.params;
+---
+
+<Layout>
+	<Navbar />
+	{stage === 'local-champion' && <LocalChampion />}
+	{stage === 'semifinalists' && <Semifinalists />}
+	{stage === 'grandfinalists' && <Grandfinalists />}
+	<Sponsor />
+	<Footer />
+</Layout>

@@ -1,0 +1,132 @@
+---
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { ChevronLeft, ChevronRight } from '@lucide/astro';
+---
+<section id="recent-post" class="bg-white relative py-10">
+    <div class="flex flex-col gap-9">
+
+      <!-- Header & Navigation -->
+      <div class="flex justify-between items-end md:items-center w-full max-w-[970px] m-auto px-8 md:px-4">
+        <span class="font-dx-monstral text-red-primary text-[40px] leading-10 tracking-[0.5px] uppercase text-stroke-yellow" data-aos="fade-up">Most Recent Post</span>
+        <div class="flex items-center gap-4">
+          <button class="recent-prev flex items-center gap-2.5 text-gray-800 px-5 py-2 border border-slate-400 rounded-full h-fit  shrink-0 hover:bg-slate-100 transition-colors">
+            <ChevronLeft class="w-5 h-5" />
+          </button>
+          <button class="recent-next flex items-center gap-2.5 text-gray-800 px-5 py-2 border border-slate-400 rounded-full h-fit  shrink-0 hover:bg-slate-100 transition-colors">
+            <ChevronRight class="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Swiper Container -->
+      <div class="flex justify-center w-full max-w-8xl m-auto overflow-x-hidden" data-aos="fade-in">
+        <div class="swiper recentPostSwiper py-4">
+          <div class="swiper-wrapper items-center">
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-slide w-full sm:!w-auto flex justify-center">
+              <div class="w-full max-w-[340px] sm:max-w-[400px] m-auto">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DdWLM3Rj2Qk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:100%;"></blockquote>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script async src="https://www.instagram.com/embed.js"></script>
+  </section>
+
+  <script>
+    import Swiper from 'swiper';
+    import { Navigation } from 'swiper/modules';
+
+const recentSwiper = new Swiper('.recentPostSwiper', {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  centeredSlides: true,
+  loop: false,
+  modules: [Navigation],
+
+  // 1. MENCEGAH SWIPER MEMBLOKIR TAP/CLICK DI MOBILE
+  touchStartPreventDefault: false,
+  passiveListeners: true,
+
+  // 2. MENCEGAH SERANGKAIAN DRAG ACCIDENTAL DARI IFRAME
+  touchEventsTarget: 'wrapper', // Menargetkan drag pada wrapper, bukan langsung ke iframe
+  noSwiping: true,
+  noSwipingClass: 'swiper-no-swiping', // Memungkinkan area tertentu di-click tanpa menolak swipe di luar area tersebut
+
+  observer: true,
+  observeParents: true,
+
+  navigation: {
+    nextEl: '.recent-next',
+    prevEl: '.recent-prev',
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 'auto',
+      centeredSlides: false,
+      spaceBetween: 24,
+    }
+  },
+});
+  </script>

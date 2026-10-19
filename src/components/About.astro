@@ -1,0 +1,57 @@
+---
+const base = import.meta.env.BASE_URL;
+import 'swiper/css';
+import 'swiper/css/pagination';
+---
+<section id="about" class="px-4 py-[32px] md:py-[80px] relative bg-white">
+    <div class="flex flex-col md:flex-row max-w-[970px] m-auto gap-[23px] align-center items-center">
+      <div class="flex justify-center align-center flex-col gap-4  w-full max-w-[549px]" data-aos="fade-in">
+        <span class="font-qalited-rough-regular text-center md:text-left text-base text-font-secondary">Kompetisi ini
+          bukan sekadar kompetisi latte art atau manual brew. Ellenka Barista Festival adalah ajang yang menguji
+          kemampuan seorang barista secara menyeluruh mulai dari kreativitas dalam meracik menu, pemahaman produk,
+          teknik penyajian, hingga kemampuan menghadirkan pengalaman terbaik dalam setiap gelas.</span>
+        <span class="font-qalited-rough-regular text-center md:text-left text-base text-font-secondary">Tunjukkan skill,
+          kreativitas, dan passion-mu untuk bersaing dengan barista terbaik dari berbagai kota di Indonesia, serta raih
+          kesempatan menjadi juara nasional!</span>
+      </div>
+      <div class="w-full max-w-[350px] overflow-hidden rounded-2xl" data-aos="fade-in">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src={`${base}/images/desc-carousel.webp`} alt="carousel-1" class="w-full h-full object-cover rounded-2xl">
+            </div>
+            <div class="swiper-slide">
+              <img src={`${base}/images/desc-carousel.webp`} alt="carousel-2" class="w-full h-full object-cover rounded-2xl">
+            </div>
+            <div class="swiper-slide">
+              <img src={`${base}/images/desc-carousel.webp`} alt="carousel-3" class="w-full h-full object-cover rounded-2xl">
+            </div>
+          </div>
+          <!-- Pagination Dot (Opsional) -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import Swiper from 'swiper';
+    import { Autoplay, Pagination } from 'swiper/modules';
+
+    new Swiper('.mySwiper', {
+      modules: [Autoplay, Pagination],
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+      effect: 'slide',
+    });
+  </script>
+
+  

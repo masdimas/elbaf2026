@@ -1,0 +1,76 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<section id="mechanism" class="bg-yellow-primary relative">
+    <div class="py-[80px] flex flex-col gap-4 justify-center align-center ">
+      <span class="uppercase font-dx-monstral text-white text-[40px] text-center text-stroke-red leading-[40px] tracking-[0.5px]" data-aos="fade-up">Competition Mechanism</span>
+
+      <div class="flex flex-col flex-nowrap w-full max-w-8xl h-auto m-auto md:flex-row gap-8 justify-center md:justify-start 2xl:justify-center items-center md:overflow-x-auto no-scrollbar py-8 px-4 grow [&>div:nth-child(odd)]:rotate-[-3deg] [&>div:nth-child(even)]:rotate-[2deg] [&>div]:bg-white [&>div:last-child]:bg-green-secondary">
+        
+        <!-- CARD 1 -->
+        <div class="group flex flex-col shrink-0 rounded-2xl border-4 border-brown-primary max-w-[380px] overflow-hidden shadow-box-mechanism" data-aos="fade-up">
+          <div class="flex flex-col gap-3 p-3 border-[1px] border-brown-primary">
+            <div class="flex align-center items-end gap-3">
+              <span class="font-oxanium-regular text-white text-2xl text-center bg-green-secondary px-1 py-[2px]">1</span>
+              <span class="font-dx-monstral text-black group-[:last-child]:text-white text-2xl uppercase tracking-[0.5px]">Regional Selection</span>
+            </div>
+            <span class="font-dx-monstral text-blue-primary text-xl tracking-[0.5px] leading-5 uppercase">MAKASSAR, BALIKPApan, medan, bali, yogyakarta, surabaya, BANDUNG &amp; JAKARTA</span>
+          </div>
+          <div class="flex bg-red-primary p-3 grow items-center">
+            <span class="font-qalited-rough-regular text-white text-base tracking-[0.5px] leading-5">Barista dari 8 regional Indonesia mengikuti seleksi di daerah masing-masing. Setiap regional mengirimkan 4 perwakilan terbaik.</span>
+          </div>
+          <div class="flex bg-red-primary p-3 grow items-center justify-end">
+            <a href="baristas.html" class="font-dx-monstral uppercase text-yellow-secondary text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all">Meet local champions</a>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="group flex flex-col shrink-0 rounded-2xl border-4 border-brown-primary max-w-[380px] overflow-hidden shadow-box-mechanism" data-aos="fade-up">
+          <div class="flex flex-col gap-3 p-3 border-[1px] border-brown-primary">
+            <div class="flex align-center items-end gap-3">
+              <span class="font-oxanium-regular text-white text-2xl text-center bg-green-secondary px-1 py-[2px]">2</span>
+              <span class="font-dx-monstral text-black group-[:last-child]:text-white text-2xl uppercase tracking-[0.5px]">Elimination Round</span>
+            </div>
+            <span class="font-dx-monstral text-blue-primary text-xl tracking-[0.5px] leading-5 uppercase">Top 36</span>
+          </div>
+          <div class="flex bg-red-primary p-3 grow items-center">
+            <span class="font-qalited-rough-regular text-white text-base tracking-[0.5px] leading-5">36 barista terpilih dibagi ke dalam 18 flight group untuk berkompetisi membuat es kopi susu. Top 18 terbaik akan melaju ke babak berikutnya.</span>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="group flex flex-col shrink-0 rounded-2xl border-4 border-brown-primary max-w-[380px] overflow-hidden shadow-box-mechanism" data-aos="fade-up">
+          <div class="flex flex-col gap-3 p-3 border-[1px] border-brown-primary">
+            <div class="flex align-center items-end gap-3">
+              <span class="font-oxanium-regular text-white text-2xl text-center bg-green-secondary px-1 py-[2px]">3</span>
+              <span class="font-dx-monstral text-black group-[:last-child]:text-white text-2xl uppercase tracking-[0.5px]">Semi Final</span>
+            </div>
+            <span class="font-dx-monstral text-blue-primary text-xl tracking-[0.5px] leading-5">Top 18</span>
+          </div>
+          <div class="flex bg-red-primary p-3 grow items-center">
+            <span class="font-qalited-rough-regular text-white text-base tracking-[0.5px] leading-5">Top 18 akan dibagi ke dalam 6 tim (tiap tim beranggotakan 3 orang) untuk bersaing dalam "Coffee Market Challenge".  Penilaian gabungan 60% penjualan + 40% peniliaian judges. 3 tim terbaik (9 orang) akan maju ke babak final</span>
+          </div>
+          <div class="flex bg-red-primary p-3 grow items-center justify-end">
+            <a href="top10.html" class="font-dx-monstral text-yellow-secondary uppercase text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all">Meet them soon</a>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="group flex flex-col shrink-0 rounded-2xl border-4 border-brown-primary max-w-[380px] overflow-hidden shadow-box-mechanism" data-aos="fade-up">
+          <div class="flex justify-between items-center gap-3 p-3 border-[1px] border-brown-primary">
+            <div class="flex align-center items-end gap-3">
+              <span class="font-oxanium-regular text-white text-2xl text-center bg-green-secondary px-1 py-[2px]">4</span>
+              <span class="font-dx-monstral text-black group-[:last-child]:text-white text-2xl uppercase tracking-[0.5px]">Final Round</span>
+            </div>
+            <img src={`${base}/images/grand-final-ilustration.webp`} alt="grand-final-ilustration" class="w-full h-auto max-w-[52px]">
+          </div>
+          <div class="flex bg-red-primary p-3 grow items-center">
+            <span class="font-qalited-rough-regular text-white text-base tracking-[0.5px] leading-5">9 finalis terbaik berkompetisi dalam sesi open service menyajikan 2 menu minuman (kopi dan non-kopi).</span>
+          </div>
+          <div class="flex bg-red-primary p-3 grow items-center justify-end">
+            <a href="grandfinal.html" class="font-dx-monstral text-yellow-secondary uppercase text-stroke-brown text-shadow-brown text-center rounded-[28px] px-[20px] py-[9px] bg-yellow-primary border-[2px] border-brown-primary hover:bg-green-primary hover:text-yellow-primary transition-all">Reveal the top 3 soon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
